@@ -1,0 +1,44 @@
+---
+import { MobileNavbarDrawer } from "./MobileNavbarDrawer";
+import { ModeToggle } from "./ModeToggle";
+---
+
+<nav class="sm:fixed top-2 w-full flex sm:justify-center justify-end">
+  <div
+    class="hidden sm:flex justify-center gap-12 my-2 p-3 animate-navbar-blur border rounded-full"
+  >
+    <a href="#Home" class="hover:font-semibold">Home</a>
+    <a href="#Experience" class="hover:font-semibold">Experience</a>
+    <a href="#Education" class="hover:font-semibold">Education</a>
+    <a href="#Projects" class="hover:font-semibold">Projects</a>
+  </div>
+
+  <div class="flex sm:hidden">
+    <MobileNavbarDrawer client:load/>
+  </div>
+  
+</nav>
+
+<style>
+  .animate-navbar-blur {
+    animation: navbar-blur linear both;
+    animation-timeline: scroll(root);
+    animation-range: 0 400px;
+    max-width: calc(5 / 6 * 100%);
+  }
+
+  @keyframes navbar-blur {
+    0% {
+      border-color: transparent;
+      backdrop-filter: blur(0px);
+      padding-left: 40vw;
+      padding-right: 40vw;
+    }
+    100% {
+      border-color: var(--color-neutral-500);
+      backdrop-filter: blur(25px);
+      padding-left: 40px;
+      padding-right: 40px;
+    }
+  }
+</style>
