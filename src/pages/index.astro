@@ -4,8 +4,10 @@ import Welcome from '../components/Welcome.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import { ModeToggle } from '@/components/ModeToggle';
 import ColorDemo from '@/components/ColorDemo.astro';
-import Timeline from '@/components/Timeline';
+import ExperienceTimeline from '@/components/ExperienceTimeline';
 import { Separator } from "@/components/ui/separator"
+
+import { name, title, description, socials, experience, education, projects } from '../data/portfolio.json';
 
 
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
@@ -13,12 +15,11 @@ import { Separator } from "@/components/ui/separator"
 ---
 
 <BaseLayout>
-	<HeroSection/>
+	<HeroSection name={name} title={title} description={description} socials={socials} />
 	<Separator />
-	<!-- <ColorDemo/> -->
-	
-	<Timeline/>
+	<ExperienceTimeline experiences={experience}/>
 	<ModeToggle client:load />
+	<!-- <ColorDemo/> -->
 
 
 	<h1 id="Education">Education</h1>

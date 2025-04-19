@@ -1,0 +1,37 @@
+{
+  "name": "Tuna Uygun",
+  "title": "Software</br>Developer",
+  "description": "I enjoy turning ideas into <colour>software</colour> that <colour>solves real problems</colour> — built with clarity, reliability, and a practical mindset.</br>I care about writing useful <colour>code</colour> and learning a bit more with each project.",
+  "socials": {
+    "GitHub": "https://github.com/tunauygun",
+    "LinkedIn": "https://linkedin.com/in/tunauygun",
+    "Email": "uyguntuna2018@gmail.com"
+  },
+  "experience": [
+    {
+      "date": "Jan 2023 – Present",
+      "title": "Frontend Developer",
+      "company": "Cool Startup",
+      "companyLogo": "gc.png",
+      "description": [
+        "Built responsive and accessible UI components using React and Tailwind.",
+        "Collaborated with designers and backend engineers to ship features quickly.",
+        "Contributed to a growing design system with reusable components."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "date": "2020 – 2024",
+      "school": "Example University",
+      "degree": "B.Sc. in Computer Science"
+    }
+  ],
+  "projects": [
+    {
+      "name": "Personal Portfolio",
+      "description": "A minimalist portfolio site built with Astro and Tailwind.",
+      "link": "https://yourportfolio.com"
+    }
+  ]
+}
