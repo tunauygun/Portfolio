@@ -4,6 +4,9 @@ import Welcome from '../components/Welcome.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import { ModeToggle } from '@/components/ModeToggle';
 import ColorDemo from '@/components/ColorDemo.astro';
+import Timeline from '@/components/Timeline';
+import { Separator } from "@/components/ui/separator"
+
 
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
@@ -11,7 +14,11 @@ import ColorDemo from '@/components/ColorDemo.astro';
 
 <BaseLayout>
 	<HeroSection/>
-	<ColorDemo/>
+	<!-- <ColorDemo/> -->
+	<ModeToggle client:load />
+	<Separator />
+
+	<Timeline/>
 
 	<h1 id="Home">Home</h1>
 	<div class="mb-96">
@@ -46,7 +53,6 @@ import ColorDemo from '@/components/ColorDemo.astro';
 		Duis gravida quam viverra, aliquam velit quis, tincidunt leo. Nullam vulputate turpis non sapien ultricies, vel sollicitudin lectus viverra. Integer nec lectus sit amet nunc ullamcorper aliquam. Aliquam erat volutpat. Pellentesque quis elit et augue gravida porta. Mauris sagittis gravida tellus, nec interdum ipsum pharetra eu. Suspendisse non mauris enim.
 	 </div>
 	</BaseLayout>
-	<ModeToggle client:load />
 	
 	
 	
