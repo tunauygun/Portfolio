@@ -22,14 +22,14 @@
   ],
   "education": [
     {
-      "date": "2020 – 2024",
+      "date": "Sep 2020 - Present",
       "degree": "B.Sc. in Computer Science",
       "school": "Example University",
-      "schoolLogo": "carleton.png",
+      "schoolLogo": "carleton.jpg",
       "description": [
         "GPA: 11.9/12 | Graduation Date: 2024/04/30",
         "University Medal Winner for being among the top 1% of the graduating class",
-        "Teaching assistant for Computation and Programming (Fall 2020 & Winter 2023), Data Management (Winter 2021, Winter 2023 & Fall 2023), Real Time Concurrent Systems (Winter 2024)"
+        "Teaching assistant for Computation and Programming (Fall 2020 & Winter 2023),Data Management (Winter 2021, Winter 2023 & Fall 2023), Real Time Concurrent Systems (Winter 2024)"
       ]
     }
   ],

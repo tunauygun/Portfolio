@@ -7,6 +7,7 @@ import ExperienceSection from '@/components/ExperienceSection';
 
 
 import { name, title, description, socials, experience, education, projects } from '../data/portfolio.json';
+import EducationSection from '@/components/EducationSection';
 
 
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
@@ -17,19 +18,11 @@ import { name, title, description, socials, experience, education, projects } fr
 	<HeroSection name={name} title={title} description={description} socials={socials} />
 	<Separator />
 	<ExperienceSection experiences={experience}/>
-	 <Separator />
+	<Separator />
+	<EducationSection educationList={education}/>
 	<ModeToggle client:load />
 	<!-- <ColorDemo/> -->
 
-
-	<h1 id="Education">Education</h1>
-	<div class="mb-96">
-		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin placerat volutpat erat et tempor. Suspendisse eleifend erat sapien, eu volutpat velit tincidunt nec. Curabitur lacus sapien, ornare id convallis non, vulputate vel ante. Nam id placerat lacus. Fusce gravida eros eu feugiat vehicula. Ut in libero eros. Maecenas felis tellus, sollicitudin ac risus sed, molestie sagittis purus. Pellentesque sed sagittis ante, sed vulputate justo. Maecenas fermentum, sapien vitae finibus pellentesque, augue velit malesuada neque, in convallis lorem turpis nec nibh. Aliquam in mollis dolor. Cras eu vestibulum felis. Proin vel nunc orci. Quisque tempus ultricies risus eu imperdiet. Aenean at erat ante. Curabitur porttitor, erat eget posuere tempor, nibh velit dignissim magna, ac lobortis mauris diam quis est.
-		Morbi tempor ullamcorper consequat. Nunc viverra augue velit, vel ullamcorper sapien fringilla non. Maecenas aliquam est porttitor pulvinar mattis. Etiam sed lacus scelerisque, tincidunt est placerat, sagittis nulla. Curabitur tempus metus eu mauris dapibus fringilla. Ut eget nibh dolor. Donec molestie tincidunt ipsum quis tristique. Quisque id pellentesque sem. Vestibulum tincidunt tristique accumsan. Donec diam urna, consectetur in molestie gravida, sagittis ut sem. In hac habitasse platea dictumst. Phasellus hendrerit venenatis libero, vitae lacinia libero egestas sed.
-		Nunc consectetur rhoncus blandit. Suspendisse et nibh et urna bibendum tincidunt. Curabitur mollis justo sit amet ullamcorper pellentesque. Cras id dictum quam, vel euismod velit. Integer at enim nulla. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In varius quam non tellus laoreet, vitae euismod nisi tempor. Vivamus blandit massa dolor, nec imperdiet urna luctus in. Aliquam mollis mollis libero id vehicula. Nullam sit amet magna vitae metus porta dapibus quis et massa. Vestibulum mi libero, volutpat in nisi a, mattis varius orci.
-		Mauris ut malesuada felis. Quisque convallis nec odio non mattis. In cursus ex in ante aliquet, ac porttitor justo efficitur. In eu diam eu odio rhoncus dapibus id eget mauris. Mauris consequat libero sem, id pharetra dolor sollicitudin viverra. Suspendisse elementum quam lectus, ut malesuada justo consequat at. Pellentesque hendrerit accumsan lectus, vel laoreet nisi venenatis maximus. Ut fringilla lacinia elit, in cursus lorem gravida in. Pellentesque laoreet purus eu facilisis vehicula. Sed cursus, dolor sit amet tincidunt sagittis, eros tortor blandit dolor, ut interdum mi lorem rhoncus diam. Duis eu malesuada libero, id ultricies diam. Vestibulum in rutrum arcu.
-		Duis gravida quam viverra, aliquam velit quis, tincidunt leo. Nullam vulputate turpis non sapien ultricies, vel sollicitudin lectus viverra. Integer nec lectus sit amet nunc ullamcorper aliquam. Aliquam erat volutpat. Pellentesque quis elit et augue gravida porta. Mauris sagittis gravida tellus, nec interdum ipsum pharetra eu. Suspendisse non mauris enim.
-	 </div>
 	 <h1 id="Projects">Projects</h1>
 	<div class="mb-96">
 		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin placerat volutpat erat et tempor. Suspendisse eleifend erat sapien, eu volutpat velit tincidunt nec. Curabitur lacus sapien, ornare id convallis non, vulputate vel ante. Nam id placerat lacus. Fusce gravida eros eu feugiat vehicula. Ut in libero eros. Maecenas felis tellus, sollicitudin ac risus sed, molestie sagittis purus. Pellentesque sed sagittis ante, sed vulputate justo. Maecenas fermentum, sapien vitae finibus pellentesque, augue velit malesuada neque, in convallis lorem turpis nec nibh. Aliquam in mollis dolor. Cras eu vestibulum felis. Proin vel nunc orci. Quisque tempus ultricies risus eu imperdiet. Aenean at erat ante. Curabitur porttitor, erat eget posuere tempor, nibh velit dignissim magna, ac lobortis mauris diam quis est.
