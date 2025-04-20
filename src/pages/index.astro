@@ -1,11 +1,10 @@
 ---
 import HeroSection from '@/components/HeroSection.astro';
-import Welcome from '../components/Welcome.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import { ModeToggle } from '@/components/ModeToggle';
-import ColorDemo from '@/components/ColorDemo.astro';
-import ExperienceTimeline from '@/components/ExperienceTimeline';
 import { Separator } from "@/components/ui/separator"
+import ExperienceSection from '@/components/ExperienceSection';
+
 
 import { name, title, description, socials, experience, education, projects } from '../data/portfolio.json';
 
@@ -17,7 +16,8 @@ import { name, title, description, socials, experience, education, projects } fr
 <BaseLayout>
 	<HeroSection name={name} title={title} description={description} socials={socials} />
 	<Separator />
-	<ExperienceTimeline experiences={experience}/>
+	<ExperienceSection experiences={experience}/>
+	 <Separator />
 	<ModeToggle client:load />
 	<!-- <ColorDemo/> -->
 
