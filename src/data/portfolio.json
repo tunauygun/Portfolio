@@ -1,7 +1,7 @@
 {
   "name": "Tuna Uygun",
   "title": "Software</br>Developer",
-  "description": "I enjoy turning ideas into <colour>software</colour> that <colour>solves real problems</colour> — built with clarity, reliability, and a practical mindset.</br>I care about writing useful <colour>code</colour> and learning a bit more with each project.",
+  "description": "I enjoy turning ideas into <colour>software</colour> that <colour>solves real problems</colour></br>I am learning a bit more with each project.",
   "socials": {
     "GitHub": "https://github.com/tunauygun",
     "LinkedIn": "https://linkedin.com/in/tunauygun",
@@ -12,7 +12,38 @@
       "date": "Jan 2023 – Present",
       "title": "Frontend Developer",
       "company": "Cool Startup",
-      "companyLogo": "gc.png",
+      "companyLogoLight": "gc.png",
+      "companyLogoDark": "gc.png",
+      "companyLogoLight": "gc_light.png",
+      "companyLogoDark": "gc_dark.png",
+      "description": [
+        "Built responsive and accessible UI components using React and Tailwind.",
+        "Collaborated with designers and backend engineers to ship features quickly.",
+        "Contributed to a growing design system with reusable components."
+      ]
+    },
+    {
+      "date": "Jan 2023 – Present",
+      "title": "Frontend Developer",
+      "company": "Cool Startup",
+      "companyLogoLight": "gc.png",
+      "companyLogoDark": "gc.png",
+      "companyLogoLight": "gc_light.png",
+      "companyLogoDark": "gc_dark.png",
+      "description": [
+        "Built responsive and accessible UI components using React and Tailwind.",
+        "Collaborated with designers and backend engineers to ship features quickly.",
+        "Contributed to a growing design system with reusable components."
+      ]
+    },
+    {
+      "date": "Jan 2023 – Present",
+      "title": "Frontend Developer",
+      "company": "Cool Startup",
+      "companyLogoLight": "gc.png",
+      "companyLogoDark": "gc.png",
+      "companyLogoLight": "gc_light.png",
+      "companyLogoDark": "gc_dark.png",
       "description": [
         "Built responsive and accessible UI components using React and Tailwind.",
         "Collaborated with designers and backend engineers to ship features quickly.",
@@ -25,7 +56,10 @@
       "date": "Sep 2020 - Present",
       "degree": "B.Sc. in Computer Science",
       "school": "Example University",
-      "schoolLogo": "carleton.jpg",
+      "schoolLogoLight": "carleton.jpg",
+      "schoolLogoDark": "carleton.jpg",
+      "schoolLogoLight": "carleton_light.png",
+      "schoolLogoDark": "carleton_dark.png",
       "description": [
         "GPA: 11.9/12 | Graduation Date: 2024/04/30",
         "University Medal Winner for being among the top 1% of the graduating class",
@@ -38,6 +72,38 @@
       "name": "Personal Portfolio",
       "description": "A minimalist portfolio site built with Astro and Tailwind.",
       "link": "https://yourportfolio.com"
+    },
+    {
+      "name": "Travel Map",
+      "image": "/images/projects/travel-map.png",
+      "githubUrl": "https://github.com/yourusername/travel-map",
+      "link": "https://travel-map.vercel.app",
+      "technologies": ["React", "Leaflet", "Spring Boot", "PostgreSQL"],
+      "description": "An interactive map app for planning trips. Users can drop pins, add categories, and import/export locations with a full-featured backend."
+    },
+    {
+      "name": "PC Price Tracker",
+      "image": "/images/projects/pc-price-tracker.png",
+      "githubUrl": "https://github.com/yourusername/pc-price-tracker",
+      "link": "https://pcpricetracker.com",
+      "technologies": ["Node.js", "Express", "React", "MongoDB", "Cheerio"],
+      "description": "Web scraper and dashboard that tracks price changes of computers from various sellers. Includes a historical price chart and filterable search."
+    },
+    {
+      "name": "Portfolio Website",
+      "image": "/images/projects/portfolio.png",
+      "githubUrl": "https://github.com/yourusername/portfolio",
+      "link": "https://yourname.dev",
+      "technologies": ["Astro.js", "Tailwind CSS", "TypeScript"],
+      "description": "Minimal, fast, and fully responsive portfolio website built with Astro and Tailwind. Content driven from a JSON data source."
+    },
+    {
+      "name": "PDF Report Generator",
+      "image": "/images/projects/pdf-generator.png",
+      "githubUrl": "https://github.com/yourusername/pdf-generator",
+      "link": "",
+      "technologies": ["C#", "QuestPDF", ".NET Core"],
+      "description": "C# application that generates customizable PDF reports using QuestPDF, with a clean layout and reusable component structure."
     }
   ]
 }

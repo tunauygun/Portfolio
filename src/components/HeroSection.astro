@@ -9,9 +9,10 @@ const descriptionLines = description.split(lineSplitSeperator);
 const titleLines = title.split(lineSplitSeperator);
 ---
 
-<section id="Home" class="min-h-[70vh] flex items-center px-6 bg-background text-foreground">
-    <div class="w-full max-w-5xl mx-auto flex flex-col sm:flex-row justify-between gap-10">
-      
+<section id="Home" class="relative">
+  <div class="min-h-[70vh] flex items-center px-6 bg-background text-foreground bg-transparent">
+    <div class="w-full max-w-5xl mx-auto flex flex-col sm:flex-row justify-center gap-10 lg:gap-20 xl:gap-48">
+
       <!-- Left -->
       <div>
         <p class="text-4xl text-muted-foreground">
@@ -35,11 +36,9 @@ const titleLines = title.split(lineSplitSeperator);
   
       <!-- Right -->
       <div class="space-y-6 max-w-md">
-        <p class="text-secondary-foreground text-xl">
-            <!-- I enjoy turning ideas into <span class="text-primary">software</span> that <span class="text-primary">solves real problems</span> — built with clarity, reliability, and a practical mindset.
-            </br>I care about writing useful <span class="text-primary">code</span> and learning a bit more with each project. -->
+        <div>
             {descriptionLines.map((line: string, index: number) => (
-              <span>
+              <p class="text-secondary-foreground text-xl mb-1">
                 {line.split(colourRegex).map((part, i) =>
                   i % 2 === 1 ? (
                     <span class="text-primary">{part}</span>
@@ -47,10 +46,10 @@ const titleLines = title.split(lineSplitSeperator);
                     part
                   )
                 )}
-                {index < descriptionLines.length - 1 && <br />}
-              </span>
+                {/* {index < descriptionLines.length - 1 && <br />} */}
+              </p>
             ))}
-        </p>
+        </div>
   
         <div class="flex gap-4">
             <a href={socials.GitHub} aria-label="GitHub">
@@ -72,14 +71,29 @@ const titleLines = title.split(lineSplitSeperator);
       </div>
   
     </div>
-  </section>
+  </div>
+
+  <!-- Background -->
+  <div class="absolute top-0 left-0 w-full h-full gradient-blurred-bg"></div>
+</section>
 
 
-  <style>
-    svg {
-        width: 30px;
-        height: 30px;
-        fill: var(--color-foreground);
-    }
-  </style>
+<style>
+  svg {
+      width: 30px;
+      height: 30px;
+      fill: var(--color-foreground);
+  }
+
+  .gradient-blurred-bg {
+    /* background: conic-gradient(from 180deg at 50% 50%,#2a8af6 0deg,#a853ba 180deg,#e92a67 1turn); */
+    /* background: conic-gradient(from 180deg at 50% 50%,var(--chart-1) 0deg,var(--chart-2) 180deg var(--chart-3) 1turn); */
+    background: conic-gradient(from 180deg at 50% 50%,#8a5301 0deg,#45c4de 180deg,#820101 1turn);
+
+    filter: blur(100px);
+    border-radius: 100%;
+    opacity: .2;
+    z-index: -1;
+  }
+</style>
   

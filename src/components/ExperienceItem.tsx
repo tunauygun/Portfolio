@@ -7,7 +7,8 @@ type Props = {
 export default function ExperienceItem({ experience }: Props){
     return(
         <>
-            <img className="max-h-15" src={experience.companyLogo} alt={`${experience.company} Logo`}/>
+            <img className="max-h-15 block dark:hidden" src={experience.companyLogoLight} alt={`${experience.company} Logo`}/>
+            <img className="max-h-15 hidden dark:block" src={experience.companyLogoDark} alt={`${experience.company} Logo`}/>
             <div className="text-xl font-bold">{experience.company}</div>
             <div className="text-primary text-lg">{experience.title}</div>
             <div className="text-gray-500 dark:text-gray-400 mb-2">{experience.date}</div>
