@@ -22,14 +22,14 @@ type Project = {
 ---
 <section class="container mx-auto max-w-5xl px-4 py-12">
     <h1 id="Projects" class="m-10 scroll-m-20 text-3xl font-semibold tracking-tight text-center mb-12">Projects</h1>
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+    <div class="grid grid-cols-[repeat(auto-fill,_minmax(24rem,_1fr))] gap-8">
         {projects.map((p) => (
         <div class="flex justify-center">
-            <Card className="w-full max-w-xl pt-0 transition-transform hover:shadow-2xl hover:scale-102">
+            <Card className="w-[32rem] pt-0 transition-transform hover:shadow-2xl hover:scale-102">
             <img
-                src={"https://picsum.photos/300/200" || p.image}
+                src={"https://picsum.photos/900/1600" || p.image}
                 alt={p.name}
-                class="w-full h-60 object-cover rounded-t-xl"
+                class="w-full h-64 object-cover rounded-t-xl"
             />
             <CardHeader>
                 <CardTitle>{p.name}</CardTitle>
