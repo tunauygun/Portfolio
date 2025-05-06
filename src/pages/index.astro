@@ -13,7 +13,7 @@ import Projects from '@/components/Projects.astro';
 ---
 
 <BaseLayout>
-	<HeroSection name={name} title={title} description={description} socials={socials} />
+	<HeroSection name={name} title={title} description={description} socials={socials} is:client/>
 	<Separator className='mx-auto max-w-5/6 my-8'/>
 	<ExperienceSection experiences={experience}/>
 	<Separator className='mx-auto max-w-5/6 my-8'/>

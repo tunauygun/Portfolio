@@ -1,16 +1,16 @@
 ---
 import { MobileNavbarDrawer } from "./MobileNavbarDrawer";
-import { ModeToggle } from "./ModeToggle";
+
 ---
 
 <nav class="sm:fixed top-2 w-full flex sm:justify-center justify-end z-50">
   <div
     class="hidden sm:flex justify-center gap-12 my-2 p-3 animate-navbar-blur border rounded-full"
   >
-    <a href="#Home" class="hover:font-semibold">Home</a>
-    <a href="#Experience" class="hover:font-semibold">Experience</a>
-    <a href="#Education" class="hover:font-semibold">Education</a>
-    <a href="#Projects" class="hover:font-semibold">Projects</a>
+    <a href="#Home" class="nav-link relative hover:font-semibold">Home</a>
+    <a href="#Experience" class="nav-link relative hover:font-semibold">Experience</a>
+    <a href="#Education" class="nav-link relative hover:font-semibold">Education</a>
+    <a href="#Projects" class="nav-link relative hover:font-semibold">Projects</a>
   </div>
 
   <div class="flex sm:hidden">
@@ -41,4 +41,49 @@ import { ModeToggle } from "./ModeToggle";
       padding-right: 40px;
     }
   }
+
+  .nav-link::before {
+  content: '';
+  position: absolute;
+  left: -0.75rem;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 0.4rem;
+  height: 0.4rem;
+  background-color: var(--color-primary);
+  border-radius: 9999px;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+.nav-link.active::before {
+  opacity: 1;
+}
 </style>
+
+<script>
+  const sections = document.querySelectorAll<HTMLElement>('#Home, #Education, #Experience, #Projects');
+  const navLinks = document.querySelectorAll('.nav-link');
+
+  function onScroll() {
+    let current = '';
+    sections.forEach(section => {
+      const sectionTop = section.offsetTop - window.innerHeight / 2;
+      if (window.scrollY >= sectionTop) {
+        current = section.getAttribute('id') ?? "";
+      }
+    });
+
+    navLinks.forEach(link => {
+      link.classList.remove('active');
+      if (link.getAttribute('href') === `#${current}`) {
+        link.classList.add('active');
+      }
+    });
+  }
+
+  window.addEventListener('scroll', onScroll);
+  onScroll(); // run initially
+</script>
+
+
