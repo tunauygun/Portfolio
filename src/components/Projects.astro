@@ -1,0 +1,60 @@
+---
+// import { Badge, Github, ExternalLink } from 'lucide-react';
+// import type { Button } from './ui/button';
+// import type { Card, CardHeader, CardTitle, CardDescription, CardContent, CardFooter } from './ui/card';
+
+// import Image from "next/image"
+import { Button } from "@/components/ui/button"
+import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
+import { Badge } from "@/components/ui/badge"
+import { ExternalLink, Github } from "lucide-react"
+
+const { projects } : Props = Astro.props;
+
+type Props = {
+    projects: Project[];
+}
+
+type Project = {
+  name: string;
+  image: string;
+  githubUrl: string;
+  link: string;
+  technologies: string[];
+  description: string;
+};
+---
+<section class="container mx-auto max-w-5xl px-4 py-12">
+    <h1 id="Projects" class="m-10 scroll-m-20 text-3xl font-semibold tracking-tight text-center mb-12">Projects</h1>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        {projects.map((p) => (
+        <div class="flex justify-center">
+            <Card className="w-full max-w-xl pt-0 transition-transform hover:shadow-2xl hover:scale-103">
+            <img
+                src={"https://picsum.photos/300/200" || p.image}
+                alt={p.name}
+                class="w-full h-60 object-cover rounded-t-xl"
+            />
+            <CardHeader>
+                <CardTitle>{p.name}</CardTitle>
+                <CardDescription>{p.description}</CardDescription>
+            </CardHeader>
+            <CardContent>
+                <h3 class="text-sm font-medium mb-2">Technologies</h3>
+                <div class="flex flex-wrap gap-2">
+                {p.technologies.map((tech) => (
+                    <Badge variant="outline" key={tech}>
+                    {tech}
+                    </Badge>
+                ))}
+                </div>
+            </CardContent>
+            <CardFooter className="flex justify-between mt-auto">
+                <a href={p.githubUrl}><Button variant="outline" className="cursor-pointer"><Github/>GitHub</Button></a>
+                <a href={p.link}><Button variant="default" className="cursor-pointer"><ExternalLink/>Live Demo</Button></a>
+            </CardFooter>
+            </Card>
+        </div>
+        ))}
+    </div>
+</section>
