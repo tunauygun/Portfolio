@@ -1,11 +1,10 @@
 ---
 import HeroSection from '@/components/HeroSection.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
-import { ModeToggle } from '@/components/ModeToggle';
 import { Separator } from "@/components/ui/separator"
 import ExperienceSection from '@/components/ExperienceSection';
 
-import { name, title, description, socials, experience, education, projects } from '../data/portfolio.json';
+import { name, title, description, socials, resume, experience, education, projects } from '../data/portfolio.json';
 import EducationSection from '@/components/EducationSection';
 import ColorDemo from '@/components/ColorDemo.astro';
 import Projects from '@/components/Projects.astro';
@@ -14,12 +13,11 @@ import Footer from '@/components/Footer.astro';
 ---
 
 <BaseLayout>
-	<HeroSection name={name} title={title} description={description} socials={socials} is:client/>
+	<HeroSection name={name} title={title} description={description} socials={socials} resume={resume} is:client/>
 	<Separator className='mx-auto max-w-5/6 my-8'/>
 	<ExperienceSection experiences={experience}/>
 	<Separator className='mx-auto max-w-5/6 my-8'/>
 	<EducationSection educationList={education}/>
-	<ModeToggle client:load />
 	<Separator className='mx-auto max-w-5/6 my-8'/>
 	<Projects projects={projects}/>
 	<Separator className='mx-auto max-w-5/6 mt-32 mb-8'/>
