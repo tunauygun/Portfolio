@@ -1,5 +1,7 @@
 ---
-import { MobileNavbarDrawer } from "./MobileNavbarDrawer";
+import { MobileNavbarDrawer } from "@/components/MobileNavbarDrawer";
+import { ModeToggle } from '@/components/ModeToggle';
+
 
 ---
 
@@ -18,6 +20,10 @@ import { MobileNavbarDrawer } from "./MobileNavbarDrawer";
   </div>
   
 </nav>
+
+<div class="hidden sm:block absolute right-8 top-6 z-51 ">
+  <ModeToggle client:load />
+</div>
 
 <style>
   .animate-navbar-blur {

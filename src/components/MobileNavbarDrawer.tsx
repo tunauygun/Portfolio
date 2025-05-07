@@ -8,6 +8,7 @@ import {
 } from "@/components/ui/sheet";
 
 import { Button } from "@/components/ui/button";
+import { ModeToggle } from '@/components/ModeToggle';
 import { Menu } from "lucide-react";
 import { useState } from "react";
 
@@ -34,6 +35,7 @@ export function MobileNavbarDrawer() {
           <div onClick={() => handleNavClick("#Experience")}>Experience</div>
           <div onClick={() => handleNavClick("#Education")}>Education</div>
           <div onClick={() => handleNavClick("#Projects")}>Projects</div>
+          <ModeToggle />
         </SheetHeader>
       </SheetContent>
     </Sheet>
