@@ -10,80 +10,72 @@
   "resume": "Resume.pdf",
   "experience": [
     {
-      "date": "Jan 2023 – Present",
-      "title": "Frontend Developer",
-      "company": "Cool Startup",
-      "companyLogoLight": "gc.png",
-      "companyLogoDark": "gc.png",
-      "companyLogoLight": "gc_light.png",
-      "companyLogoDark": "gc_dark.png",
+      "date": "Sep–Dec 2023 & May–Aug 2024",
+      "title": "Web Developer Co-op",
+      "company": "Environment and Climate Change Canada",
+      "companyLogoLight": "logo/gc_light.png",
+      "companyLogoDark": "logo/gc_dark.png",
       "description": [
-        "Built responsive and accessible UI components using React and Tailwind.",
-        "Collaborated with designers and backend engineers to ship features quickly.",
-        "Contributed to a growing design system with reusable components."
+        "Developed and implemented a C# bulk-generation API endpoint to generate dozens of PDF reports in one call, reducing manual effort by 80%",
+        "Upgraded the codebase to .NET with dependency injection and asynchronous processing, speeding bulk report generation time by 50%",
+        "Authored T-SQL stored procedures and scripts to archive multi-table reports with full referential integrity",
+        "Analyzed execution plans, restructured operations, and added indexes in MS SQL Server to decrease the query response times and eliminate timeouts"
       ]
     },
     {
-      "date": "Jan 2023 – Present",
-      "title": "Frontend Developer",
-      "company": "Cool Startup",
-      "companyLogoLight": "gc.png",
-      "companyLogoDark": "gc.png",
-      "companyLogoLight": "gc_light.png",
-      "companyLogoDark": "gc_dark.png",
+      "date": "Apr 2023 – Aug 2023",
+      "title": "IT Developer Co-op",
+      "company": "Department of Justice Canada",
+      "companyLogoLight": "logo/gc_light.png",
+      "companyLogoDark": "logo/gc_dark.png",
       "description": [
-        "Built responsive and accessible UI components using React and Tailwind.",
-        "Collaborated with designers and backend engineers to ship features quickly.",
-        "Contributed to a growing design system with reusable components."
+        "Implemented new features and bug fixes for a legal case management system using Microsoft Dynamics 360",
+        "Performed system testing on developed features and bug fixes and documented their status on Azure DevOps",
+        "Collaborated in an Agile team, actively participating in daily stand-ups, sprint planning, reviews, and retrospectives, while managing tasks and progress using  Azure DevOps"
       ]
     },
     {
-      "date": "Jan 2023 – Present",
-      "title": "Frontend Developer",
-      "company": "Cool Startup",
-      "companyLogoLight": "gc.png",
-      "companyLogoDark": "gc.png",
-      "companyLogoLight": "gc_light.png",
-      "companyLogoDark": "gc_dark.png",
+      "date": "May–Sep 2022 & Jan–Mar 2023",
+      "title": " Junior Programmer Analyst Co-op",
+      "company": "Transport Canada",
+      "companyLogoLight": "logo/gc_light.png",
+      "companyLogoDark": "logo/gc_dark.png",
       "description": [
-        "Built responsive and accessible UI components using React and Tailwind.",
-        "Collaborated with designers and backend engineers to ship features quickly.",
-        "Contributed to a growing design system with reusable components."
+        "Developed Python scripts using Shapely and Folium to generate and visualize 3D Obstacle Limitation Surfaces (OLS) around 320+ airports, aiding aviation inspectors in hazard assessments",
+        "Implemented ETL (Extract, Transform, and Load) pipelines on geospatial data for aerodromes using GeoPandas in a Databrick Python notebook, streamlining data ingestion and transformation workflows",
+        "Developed a web application using React.js, ArcGIS Experience Builder, and ArcGIS API for JavaScript to search, monitor, and track vessel traffic using vessel AIS data"
       ]
     }
   ],
   "education": [
     {
-      "date": "Sep 2020 - Present",
-      "degree": "B.Sc. in Computer Science",
-      "school": "Example University",
-      "schoolLogoLight": "carleton.jpg",
-      "schoolLogoDark": "carleton.jpg",
-      "schoolLogoLight": "carleton_light.png",
-      "schoolLogoDark": "carleton_dark.png",
+      "date": "Sep 2020 - May 2025",
+      "degree": "Bachelor of Engineering — Software Engineering",
+      "school": "Carleton University",
+      "schoolLogoLight": "logo/carleton_light.png",
+      "schoolLogoDark": "logo/carleton_dark.png",
       "description": [
-        "GPA: 11.9/12 | Graduation Date: 2024/04/30",
-        "University Medal Winner for being among the top 1% of the graduating class",
-        "Teaching assistant for Computation and Programming (Fall 2020 & Winter 2023),Data Management (Winter 2021, Winter 2023 & Fall 2023), Real Time Concurrent Systems (Winter 2024)"
+        "Graduated with High Distinction",
+        "Courses: Web Development, Network and Software Security, Computer Communications, Software Validation, Software Architecture & Design, Database Management Systems, Operating Systems, Intro to Real-Time Concurrent Systems, Computer Organization and Architecture, Algorithms and Data Structures, Object-Oriented Software Development"
       ]
     }
   ],
   "projects": [
     {
-      "name": "Travel Map",
-      "image": "/images/projects/travel-map.png",
-      "githubUrl": "https://github.com/yourusername/travel-map",
-      "link": "https://travel-map.vercel.app",
-      "technologies": ["React", "Leaflet", "Spring Boot", "PostgreSQL"],
-      "description": "An interactive map app for planning trips. Users can drop pins, add categories, and import/export locations with a full-featured backend."
+      "name": "coplaner",
+      "image": "/project/coplaner.png",
+      "githubUrl": "https://github.com/tunauygun/coplaner",
+      "link": "https://coplaner.onrender.com/",
+      "technologies": ["JavaScript", "HTML", "Node.js", "Bootstrap", "Express", "EJS"],
+      "description": "An unofficial web application developed to assist Carleton University students in generating conflict-free timetables."
     },
     {
-      "name": "PC Price Tracker",
-      "image": "/images/projects/pc-price-tracker.png",
-      "githubUrl": "https://github.com/yourusername/pc-price-tracker",
-      "link": "https://pcpricetracker.com",
-      "technologies": ["Node.js", "Express", "React", "MongoDB", "Cheerio"],
-      "description": "Web scraper and dashboard that tracks price changes of computers from various sellers. Includes a historical price chart and filterable search."
+      "name": "Teagrade",
+      "image": "/project/teagrade.png",
+      "githubUrl": "https://github.com/tunauygun/Teagrade",
+      "link": "https://teagrade.onrender.com/",
+      "technologies": ["MongoDB", "OpenCV", "JavaScript", "HTML", "Node.js", "Bootstrap", "Express", "EJS"],
+      "description": "A web application designed to simplify test creation and grading for teachers. Create multiple-choice tests, generate printable bubble sheets, and automatically grade student submissions by scanning completed sheets."
     },
     {
       "name": "Portfolio Website",
