@@ -1,9 +1,10 @@
 ---
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
-import { Badge } from "@/components/ui/badge"
+import { Dialog, DialogTrigger, DialogContent } from "@/components/ui/dialog"
 import { ExternalLink, Github } from "lucide-react"
 import TechBadge from "@/components/TechBadge.astro";
+import { ClickableCardImage } from "@/components/ClickableCardImage";
 
 const { projects } : Props = Astro.props;
 
@@ -26,11 +27,23 @@ type Project = {
         {projects.map((p) => (
         <div class="flex justify-center">
             <Card className="w-[32rem] pt-0 transition-transform hover:shadow-2xl hover:scale-102">
-            <img
-                src={"https://picsum.photos/900/1600" || p.image}
-                alt={p.name}
-                class="w-full h-64 object-cover rounded-t-xl"
-            />
+            <ClickableCardImage image={p.image} alt={p.name} className="w-full h-64 object-cover rounded-t-xl" client:load/>
+            {/* <Dialog>
+                <DialogTrigger asChild>
+                    <img
+                    src={p.image}
+                    alt={p.name}
+                    class="w-full h-64 object-cover rounded-t-xl cursor-pointer"
+                    />
+                </DialogTrigger>
+                <DialogContent className="max-w-4xl p-0">
+                    <img
+                    src={p.image}
+                    alt={p.name}
+                    class="w-full h-auto max-h-[80vh] object-contain rounded-xl"
+                    />
+                </DialogContent>
+            </Dialog> */}
             <CardHeader>
                 <CardTitle>{p.name}</CardTitle>
                 <CardDescription>{p.description}</CardDescription>
