@@ -13,8 +13,8 @@
       "date": "Sep–Dec 2023 & May–Aug 2024",
       "title": "Web Developer Co-op",
       "company": "Environment and Climate Change Canada",
-      "companyLogoLight": "logo/gc_light.png",
-      "companyLogoDark": "logo/gc_dark.png",
+      "companyLogoLight": "/images/logos/gc_light.png",
+      "companyLogoDark": "/images/logos/gc_dark.png",
       "description": [
         "Developed and implemented a C# bulk-generation API endpoint to generate dozens of PDF reports in one call, reducing manual effort by 80%",
         "Upgraded the codebase to .NET with dependency injection and asynchronous processing, speeding bulk report generation time by 50%",
@@ -26,8 +26,8 @@
       "date": "Apr 2023 – Aug 2023",
       "title": "IT Developer Co-op",
       "company": "Department of Justice Canada",
-      "companyLogoLight": "logo/gc_light.png",
-      "companyLogoDark": "logo/gc_dark.png",
+      "companyLogoLight": "/images/logos/gc_light.png",
+      "companyLogoDark": "/images/logos/gc_dark.png",
       "description": [
         "Implemented new features and bug fixes for a legal case management system using Microsoft Dynamics 360",
         "Performed system testing on developed features and bug fixes and documented their status on Azure DevOps",
@@ -38,8 +38,8 @@
       "date": "May–Sep 2022 & Jan–Mar 2023",
       "title": " Junior Programmer Analyst Co-op",
       "company": "Transport Canada",
-      "companyLogoLight": "logo/gc_light.png",
-      "companyLogoDark": "logo/gc_dark.png",
+      "companyLogoLight": "/images/logos/gc_light.png",
+      "companyLogoDark": "/images/logos/gc_dark.png",
       "description": [
         "Developed Python scripts using Shapely and Folium to generate and visualize 3D Obstacle Limitation Surfaces (OLS) around 320+ airports, aiding aviation inspectors in hazard assessments",
         "Implemented ETL (Extract, Transform, and Load) pipelines on geospatial data for aerodromes using GeoPandas in a Databrick Python notebook, streamlining data ingestion and transformation workflows",
@@ -52,8 +52,8 @@
       "date": "Sep 2020 - May 2025",
       "degree": "Bachelor of Engineering — Software Engineering",
       "school": "Carleton University",
-      "schoolLogoLight": "logo/carleton_light.png",
-      "schoolLogoDark": "logo/carleton_dark.png",
+      "schoolLogoLight": "/images/logos/carleton_light.png",
+      "schoolLogoDark": "/images/logos/carleton_dark.png",
       "description": [
         "Graduated with High Distinction",
         "Courses: Web Development, Network and Software Security, Computer Communications, Software Validation, Software Architecture & Design, Database Management Systems, Operating Systems, Intro to Real-Time Concurrent Systems, Computer Organization and Architecture, Algorithms and Data Structures, Object-Oriented Software Development"
@@ -62,8 +62,16 @@
   ],
   "projects": [
     {
+      "name": "Yet Another Travel Map - YATM",
+      "image": "/images/projects/yatm.png",
+      "githubUrl": "https://github.com/YetAnotherTravelMap/YATM",
+      "link": "https://yatm.pages.dev/",
+      "technologies": ["React", "Leaflet", "Spring Boot", "PostgreSQL"],
+      "description": "An interactive map app for planning trips. Users can drop pins, add categories, and import/export locations with a full-featured backend."
+    },
+    {
       "name": "coplaner",
-      "image": "/project/coplaner.png",
+      "image": "/images/projects/coplaner.png",
       "githubUrl": "https://github.com/tunauygun/coplaner",
       "link": "https://coplaner.onrender.com/",
       "technologies": ["JavaScript", "HTML", "Node.js", "Bootstrap", "Express", "EJS"],
@@ -71,27 +79,19 @@
     },
     {
       "name": "Teagrade",
-      "image": "/project/teagrade.png",
+      "image": "/images/projects/teagrade.png",
       "githubUrl": "https://github.com/tunauygun/Teagrade",
       "link": "https://teagrade.onrender.com/",
       "technologies": ["MongoDB", "OpenCV", "JavaScript", "HTML", "Node.js", "Bootstrap", "Express", "EJS"],
       "description": "A web application designed to simplify test creation and grading for teachers. Create multiple-choice tests, generate printable bubble sheets, and automatically grade student submissions by scanning completed sheets."
     },
     {
-      "name": "Portfolio Website",
+      "name": "Portfolio",
       "image": "/images/projects/portfolio.png",
-      "githubUrl": "https://github.com/yourusername/portfolio",
-      "link": "https://yourname.dev",
-      "technologies": ["Astro.js", "Tailwind CSS", "TypeScript"],
-      "description": "Minimal, fast, and fully responsive portfolio website built with Astro and Tailwind. Content driven from a JSON data source."
-    },
-    {
-      "name": "PDF Report Generator",
-      "image": "/images/projects/pdf-generator.png",
-      "githubUrl": "https://github.com/yourusername/pdf-generator",
-      "link": "",
-      "technologies": ["C#", "QuestPDF", ".NET Core"],
-      "description": "C# application that generates customizable PDF reports using QuestPDF, with a clean layout and reusable component structure."
+      "githubUrl": "https://github.com/tunauygun/Portfolio",
+      "link": "https://tunauygun.me/",
+      "technologies": ["Astro.js", "Tailwind CSS", "JavaScript", "HTML", "Node.js"],
+      "description": "This is the portfolio website you're currently viewing. I designed and developed it to showcase my skills, projects, and professional background."
     }
   ]
 }
