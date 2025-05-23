@@ -1,6 +1,7 @@
 ---
 import Navbar from '@/components/Navbar.astro'
 import '@/styles/global.css'
+import { name, googleAnalyticsGTag } from '@/data/portfolio.json';
 ---
 
 <!doctype html>
@@ -10,12 +11,22 @@ import '@/styles/global.css'
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Tuna Uygun - Portfolio</title>
+		<title>{name} - Portfolio</title>
 
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+	
+		<!-- Google tag (gtag.js) -->
+		<script define:vars={{ googleAnalyticsGTag }} is:inline async src={`https://www.googletagmanager.com/gtag/js?id=${googleAnalyticsGTag}`}></script>
+		<script define:vars={{ googleAnalyticsGTag }} is:inline>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+			gtag('config', googleAnalyticsGTag);
+		</script>
 	</head>
+
 	<body class="font-[Montserrat]">
 		<Navbar></Navbar>
 		<main class="pt-20">
